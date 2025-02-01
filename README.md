@@ -40,7 +40,7 @@ cast send <$TOKEN> \
 
 2. **Call function.[bridgeERC20To](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/L1StandardBridge.sol#L178C1-L200C6)** (to `L1StandardBridge`)
 > [!NOTE]  
-> If the decimal token is 6, use the value [10^6](https://etherscan.io/unitconverter).
+> If the decimal token is 6, use <$AMOUNT> the value [Szabo 10^6](https://etherscan.io/unitconverter).
 ```
 cast send <$L1_STANDARD_BRIDGE> \
 "bridgeERC20To(address,address,address,uint256,uint32,bytes)" \
@@ -71,7 +71,7 @@ cast send <$TOKEN> \
 
 2. **Call function.[bridgeERC20](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/universal/StandardBridge.sol#L191C1-L211C6)** (to `L2StandardBridge`)
 > [!NOTE]  
-> If the decimal token is 6, use the value [10^6](https://etherscan.io/unitconverter).
+> If the decimal token is 6, use <$AMOUNT> the value [Szabo 10^6](https://etherscan.io/unitconverter).
 ```
 cast send <$L2_STANDARD_BRIDGE> \
 "bridgeERC20To(address,address,uint256,uint32,bytes)" \
