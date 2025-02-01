@@ -88,6 +88,8 @@ cast send <$L2_STANDARD_BRIDGE> \
 
 ## proveWithdrawalTransaction (on L1) - use [Opstack Kit](https://opstack-kit.pages.dev/docs/getting-started#installation) `npm i -g opstack-kit`
 ### Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L243C1-L322C6)" address.
+> [!NOTE]  
+> Non-Fault proofs: disputeGameFactory = 0x_l2OutputOracle, Fault proofs: l2OutputOracle = 0x_disputeGameFactory / and --privateKey must start with 0x-key
 ```
 ok prove <WithdrawalTxHashL2> --privateKey <0x-key> --chainIdL1 <id> --rpcUrlL1 <url> --chainIdL2 <id> --rpcUrlL2 <url> --portal <address> --l2OutputOracle <address> --disputeGameFactory <address> --scanL1Url <url>
 ```
@@ -96,6 +98,8 @@ ok prove <WithdrawalTxHashL2> --privateKey <0x-key> --chainIdL1 <id> --rpcUrlL1 
 
 ## finalizeWithdrawalTransaction (on L1) - use [Opstack Kit](https://opstack-kit.pages.dev/docs/getting-started#installation) `npm i -g opstack-kit`
 ### Finalize withdrawal using transaction hash after proving, "OptimismPortal.[finalizeWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L324C1-L444C6)" address.
+> [!NOTE]  
+> Non-Fault proofs: disputeGameFactory = 0x_l2OutputOracle, Fault proofs: l2OutputOracle = 0x_disputeGameFactory / and --privateKey must start with 0x-key
 ```
 ok finalize <WithdrawalTxHashL2> --privateKey <0x-key> --chainIdL1 <id> --rpcUrlL1 <url> --chainIdL2 <id> --rpcUrlL2 <url> --portal <address> --scanL1Url <url>
 ```
