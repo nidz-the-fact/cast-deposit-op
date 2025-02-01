@@ -13,10 +13,10 @@ cast send <$TOKEN> \
 ```
 cast send <$TO_ADDRESS_STANDARDBRIDGE> \
 "bridgeERC20To(address,address,address,uint256,uint32,bytes)" \
-<$TOKEN_L1> \
-<$TOKEN_L2> \
+<$TOKEN_LOCAL_L1> \
+<$TOKEN_REMOTE_L2> \
 <$TO_YOU_ADDRESS_WALLET> \
-<$AMOUNT_OR_DEC18_OR_6> \
+<$AMOUNT_DEC18_OR_6> \
 21000 \
 0x \
 --private-key <$PRIVATE_KEY> \
