@@ -32,6 +32,7 @@ cast send <$OPTIMISM_MINTABLE_ERC20_FACTORY> \
 "createOptimismMintableERC20(address,string,string)" \
 <$TOKEN_ON_L1> \
 <$NAME_TOKEN> \
+<$SYMBOL_TOKEN> \
 --private-key <$PRIVATE_KEY> \
 --rpc-url <$RPC_CHAIN_URL>
 ```
