@@ -6,6 +6,7 @@ cast send <$OPTIMISM_MINTABLE_ERC20_FACTORY> \
 <$TOKEN_ON_L1> \
 <$NAME_TOKEN> \
 <$SYMBOL_TOKEN> \
+--gas-price 100000 \
 --private-key <$PRIVATE_KEY> \
 --rpc-url <$RPC_CHAIN_URL>
 ```
@@ -20,10 +21,10 @@ cast send <$OPTIMISM_MINTABLE_ERC20_FACTORY> \
 <$NAME_TOKEN> \
 <$SYMBOL_TOKEN> \
 <$DEC_TOKEN_6_OR_XX> \
+--gas-price 100000 \
 --private-key <$PRIVATE_KEY> \
 --rpc-url <$RPC_CHAIN_URL>
 ```
-
 ---
 
 ## Deposit
